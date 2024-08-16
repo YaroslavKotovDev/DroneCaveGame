@@ -1,10 +1,10 @@
-import {useNavigate} from "react-router-dom";
+import {useRouter} from "next/router";
 
 function Win() {
-    const navigate = useNavigate();
+    const router = useRouter();
 
     function toMenu() {
-        navigate('/menu');
+        router.push('/menu');
     }
 
     return (

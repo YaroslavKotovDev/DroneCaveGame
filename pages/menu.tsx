@@ -1,7 +1,7 @@
 import { useEffect } from 'react';
-import StartMenuPage from '@/components/menu/StartMenuPage.tsx';
-import HighscoreComponent from '@/components/highscore/HighscoreComponent.tsx';
-import { useGameState } from '@/store/store.ts';
+import StartMenuPage from '../src/components/menu/StartMenuPage.tsx';
+import HighscoreComponent from '../src/components/highscore/HighscoreComponent.tsx';
+import { useGameState } from '../src/store/store.ts';
 import { Container, Typography, Box } from '@mui/material';
 
 function Menu() {

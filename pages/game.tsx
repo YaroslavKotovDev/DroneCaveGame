@@ -1,4 +1,4 @@
-import GameComponent from '@/components/main/GameComponent.tsx';
+import GameComponent from '../src/components/main/GameComponent.tsx';
 import { Container, Typography } from '@mui/material';
 
 function GamePage() {

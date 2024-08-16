@@ -4,7 +4,7 @@ import HighscoreComponent from '../src/components/highscore/HighscoreComponent.t
 import { useGameState } from '../src/store/store.ts';
 import { Container, Typography, Box } from '@mui/material';
 
-function Menu() {
+function MenuPage() {
     const resetGameState = useGameState(state => state.resetGameState);
 
     useEffect(() => {
@@ -24,4 +24,4 @@ function Menu() {
     );
 }
 
-export default Menu;
+export default MenuPage;

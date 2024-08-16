@@ -1,16 +1,19 @@
-// pages/_app.tsx
-import type { AppProps } from 'next/app';
-import {useRouter} from "next/router";
-import {useEffect} from "react";
+import { useEffect } from 'react';
+import { useRouter } from 'next/router';
+import Layout from './layout';
 
-function MyApp({ Component, pageProps }: AppProps) {
+export default function MyApp({ Component, pageProps }) {
     const router = useRouter();
 
     useEffect(() => {
-        router.push('/menu');
+        if (router.pathname === '/') {
+            router.replace('/menu');
+        }
     }, [router]);
 
-    return <Component {...pageProps} />;
+    return (
+        <Layout>
+            <Component {...pageProps} />
+        </Layout>
+    );
 }
-
-export default MyApp;

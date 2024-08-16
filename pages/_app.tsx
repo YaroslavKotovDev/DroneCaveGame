@@ -6,7 +6,8 @@ export default function MyApp({ Component, pageProps }) {
     const router = useRouter();
 
     useEffect(() => {
-        if (router.pathname === '/') {
+        console.log(router.pathname);
+        if (router.pathname === '/_error' || router.pathname === '/') {
             router.replace('/menu');
         }
     }, [router]);
